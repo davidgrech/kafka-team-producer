@@ -49,6 +49,7 @@ public class KafKaProducerService {
 					client.setIncome(Double.valueOf(result.getString("income")));
 				}
 
+				client.setDate(result.getString("Dt_Customer"));
 				client.setMaritalStatus(result.getString("Marital_Status"));
 				client.setMntFishProducts(Double.valueOf(result.getString("MntFishProducts")));
 				client.setMntFruits(Double.valueOf(result.getString("MntFruits")));
