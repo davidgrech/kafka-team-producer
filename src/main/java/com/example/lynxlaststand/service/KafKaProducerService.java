@@ -29,7 +29,9 @@ public class KafKaProducerService {
 
 	public void saveCreateClientLog() {
 
-		String jdbcUrl = "jdbc:sqlite:/C:\\eclipse-workspace\\lynx-last-stand-producer\\marketing_campaign.db";
+		String jdbcUrl = "jdbc:sqlite:/C:\\Projects\\Lynx_Producer\\marketing_campaign.db";
+
+
 		try {
 			Connection connection = DriverManager.getConnection(jdbcUrl);
 			String sql = "SELECT * FROM marketing_campaign";
